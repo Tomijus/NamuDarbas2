@@ -16,7 +16,7 @@ namespace NamuDarbas2
                     SameCharsDifferentPlaces(GiveBackIntList(i), GiveBackIntList(i * 4)) &&
                     SameCharsDifferentPlaces(GiveBackIntList(i), GiveBackIntList(i * 5)) &&
                     SameCharsDifferentPlaces(GiveBackIntList(i), GiveBackIntList(i * 6)) &&
-                    GiveBackIntList(i * 6).Count <= 6)
+                    GiveBackIntList(i * 6).Count == 6)
                 {
                     Console.WriteLine($"Magic number: {i}");
                     /*
