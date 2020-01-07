@@ -10,15 +10,22 @@ namespace NamuDarbas2
             for (int i = 100000; i <= 999999; i++)
             {
 
-                if (IsAllElementsUnique(GiveBackIntList(i)) && SameCharsDifferentPlaces(GiveBackIntList(i), GiveBackIntList(i * 2)) && SameCharsDifferentPlaces(GiveBackIntList(i), GiveBackIntList(i * 3)) && SameCharsDifferentPlaces(GiveBackIntList(i), GiveBackIntList(i * 4)) && SameCharsDifferentPlaces(GiveBackIntList(i), GiveBackIntList(i * 5)) && SameCharsDifferentPlaces(GiveBackIntList(i), GiveBackIntList(i * 6)))
+                if (IsAllElementsUnique(GiveBackIntList(i)) && 
+                    SameCharsDifferentPlaces(GiveBackIntList(i), GiveBackIntList(i * 2)) &&
+                    SameCharsDifferentPlaces(GiveBackIntList(i), GiveBackIntList(i * 3)) &&
+                    SameCharsDifferentPlaces(GiveBackIntList(i), GiveBackIntList(i * 4)) &&
+                    SameCharsDifferentPlaces(GiveBackIntList(i), GiveBackIntList(i * 5)) &&
+                    SameCharsDifferentPlaces(GiveBackIntList(i), GiveBackIntList(i * 6)) &&
+                    GiveBackIntList(i * 6).Count <= 6)
                 {
-                    Console.WriteLine("Magic number: " + i);
+                    Console.WriteLine($"Magic number: {i}");
+                    /*
                     Console.WriteLine("Magic number multiplied by 2: " + i * 2);
                     Console.WriteLine("Magic number multiplied by 3: " + i * 3);
                     Console.WriteLine("Magic number multiplied by 4: " + i * 4);
                     Console.WriteLine("Magic number multiplied by 5: " + i * 5);
                     Console.WriteLine("Magic number multiplied by 6: " + i * 6);
-                    break;
+                    */
                 }
             }
         }
